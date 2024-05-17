@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="aula_banco_dados_mer" id="578401A5-2E16-7E60-3820-7B3184D16A45" version="3.5">
+<createdBy>Bruno Santos</createdBy>
+<createdTime>2024-05-16 23:26:00 UTC</createdTime>
+<ownerDesignName>aula_banco_dados_mer</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>578401A5-2E16-7E60-3820-7B3184D16A45</designId>
+</OSDM_Design>
