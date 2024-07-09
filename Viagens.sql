@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb-178069-db.mariadb-178069:10120
--- Tempo de geração: 09-Jul-2024 às 23:16
+-- Tempo de geração: 09-Jul-2024 às 23:52
 -- Versão do servidor: 11.1.2-MariaDB-1:11.1.2+maria~ubu2004
 -- versão do PHP: 7.2.34
 
@@ -34,6 +34,13 @@ CREATE TABLE `destinos` (
   `descricao` varchar(255) NOT NULL COMMENT 'DEscricao destino'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `destinos`
+--
+
+INSERT INTO `destinos` (`id`, `nome`, `descricao`) VALUES
+(1, 'Praia Grande', 'Praia do Povo');
+
 -- --------------------------------------------------------
 
 --
@@ -48,6 +55,13 @@ CREATE TABLE `reservas` (
   `status` varchar(255) DEFAULT 'pendente' COMMENT 'satatus da reserva (confirmada, pendente,cancelada, etc)'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Extraindo dados da tabela `reservas`
+--
+
+INSERT INTO `reservas` (`id`, `id_usuario`, `id_destino`, `data`, `status`) VALUES
+(1, 1, 1, '2023-11-11', 'pendente');
+
 -- --------------------------------------------------------
 
 --
@@ -61,6 +75,13 @@ CREATE TABLE `usuarios` (
   `endereco` varchar(50) NOT NULL COMMENT 'Endereço do usuario',
   `data_nascimento` date NOT NULL COMMENT 'Data Nascimento do usuario'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `endereco`, `data_nascimento`) VALUES
+(1, 'Bruno Santos', 'teste@teste.com', 'Av Novo Horizonte, 406 - Sacadura Santo André/SP', '1992-10-09');
 
 --
 -- Índices para tabelas despejadas
