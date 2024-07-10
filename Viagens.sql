@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb-178069-db.mariadb-178069:10120
--- Tempo de geração: 09-Jul-2024 às 23:52
+-- Tempo de geração: 10-Jul-2024 às 15:33
 -- Versão do servidor: 11.1.2-MariaDB-1:11.1.2+maria~ubu2004
 -- versão do PHP: 7.2.34
 
@@ -39,6 +39,9 @@ CREATE TABLE `destinos` (
 --
 
 INSERT INTO `destinos` (`id`, `nome`, `descricao`) VALUES
+(3, 'Cachoeira do Vale Verde', 'Uma cachoeira exuberante cercada por natureza'),
+(4, 'Cidade Histórica de Pedra Alta', 'Uma cidade rica em história e arquitetura'),
+(2, 'Praia das Tartarugas', 'Uma bela praia com areias brancas e mar cristalino'),
 (1, 'Praia Grande', 'Praia do Povo');
 
 -- --------------------------------------------------------
@@ -60,7 +63,10 @@ CREATE TABLE `reservas` (
 --
 
 INSERT INTO `reservas` (`id`, `id_usuario`, `id_destino`, `data`, `status`) VALUES
-(1, 1, 1, '2023-11-11', 'pendente');
+(1, 1, 1, '2023-11-11', 'pendente'),
+(2, 3, 2, '2023-07-10', 'confirmada'),
+(2, 2, 1, '2023-08-05', 'pendente'),
+(3, 3, 3, '2023-09-20', 'cancelada');
 
 -- --------------------------------------------------------
 
@@ -81,6 +87,9 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `endereco`, `data_nascimento`) VALUES
+(2, 'João Silva', 'joao@example.com', 'Rua A, 123, Cidade X, Estado Y', '1990-05-15'),
+(3, 'Maria Santos', 'maria@example.com', 'Rua B, 456, Cidade Y, Estado Z', '1985-08-22'),
+(4, 'Pedro Souza', 'pedro@example.com', 'Avenida C, 789, Cidade X, Estado Y', '1998-02-10'),
 (1, 'Bruno Santos', 'teste@teste.com', 'Av Novo Horizonte, 406 - Sacadura Santo André/SP', '1992-10-09');
 
 --
