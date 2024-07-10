@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb-178069-db.mariadb-178069:10120
--- Tempo de geração: 10-Jul-2024 às 15:33
+-- Tempo de geração: 10-Jul-2024 às 15:43
 -- Versão do servidor: 11.1.2-MariaDB-1:11.1.2+maria~ubu2004
 -- versão do PHP: 7.2.34
 
@@ -78,7 +78,7 @@ CREATE TABLE `usuarios` (
   `id` int(11) DEFAULT NULL,
   `nome` varchar(255) NOT NULL COMMENT 'nome do usuario',
   `email` varchar(100) NOT NULL COMMENT 'email do usuario',
-  `endereco` varchar(50) NOT NULL COMMENT 'Endereço do usuario',
+  `endereco` varchar(150) DEFAULT NULL,
   `data_nascimento` date NOT NULL COMMENT 'Data Nascimento do usuario'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
